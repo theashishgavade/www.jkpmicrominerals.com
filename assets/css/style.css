@@ -108,6 +108,8 @@ select {
     outline: none;
 }
 
+
+
 /* =========================
    TYPOGRAPHY
 ========================= */
@@ -177,13 +179,15 @@ p {
 
 }
 
+
+
 /* =========================
    SECTION TITLE
 ========================= */
 
 .section-title {
 
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 
 }
 
@@ -1848,7 +1852,7 @@ p {
 
     justify-content: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
 }
 
