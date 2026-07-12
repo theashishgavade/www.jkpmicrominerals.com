@@ -1183,36 +1183,36 @@ p {
 /* =========================
    CLIENTS SECTION
 ========================= */
-c
-.clients-section{
 
-    background:#fff;
+.clients-section {
 
-    padding:60px 0;
+    background: #fff;
 
-    border-top:1px solid var(--gray-200);
+    padding: 60px 0;
 
-    border-bottom:1px solid var(--gray-200);
+    border-top: 1px solid var(--gray-200);
 
-}
-
-.clients-title{
-
-    text-align:center;
-
-    margin-bottom:45px;
+    border-bottom: 1px solid var(--gray-200);
 
 }
 
-.clients-title h5{
+.clients-title {
 
-    margin:0;
+    text-align: center;
 
-    font-size:18px;
+    margin-bottom: 45px;
 
-    color:var(--gray-500);
+}
 
-    font-weight:600;
+.clients-title h5 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    color: var(--gray-500);
+
+    font-weight: 600;
 
 }
 
@@ -1220,157 +1220,158 @@ c
    CLIENT CARD
 ========================= */
 
-.client-logo{
+.client-logo {
 
-    position:relative;
+    position: relative;
 
-    background:#fff;
+    background: #fff;
 
-    height:95px;
+    height: 95px;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    border-radius:16px;
+    border-radius: 16px;
 
-    border:1px solid rgba(15,76,129,.08);
+    border: 1px solid rgba(15, 76, 129, .08);
 
-    transition:.4s ease;
+    transition: .4s ease;
 
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
 /* Orange Top Line */
 
-.client-logo::before{
+.client-logo::before {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    top:0;
+    top: 0;
 
-    left:0;
+    left: 0;
 
-    width:0;
+    width: 0;
 
-    height:3px;
+    height: 3px;
 
-    background:var(--secondary);
+    background: var(--secondary);
 
-    transition:.4s;
+    transition: .4s;
 
 }
 
 /* Logo */
 
-.client-logo img{
+.client-logo img {
 
-    max-width:135px;
+    max-width: 135px;
 
-    max-height:50px;
+    max-height: 50px;
 
-    width:auto;
+    width: auto;
 
-    height:auto;
+    height: auto;
 
-    object-fit:contain;
+    object-fit: contain;
 
-    transition:.4s;
+    transition: .4s;
 
 }
 
 /* Company Name */
 
-.client-logo span{
+.client-logo span {
 
-    position:absolute;
+    position: absolute;
 
-    left:50%;
+    left: 50%;
 
-    bottom:12px;
+    bottom: 12px;
 
-    transform:translate(-50%,15px);
+    transform: translate(-50%, 15px);
 
-    opacity:0;
+    opacity: 0;
 
-    font-size:11px;
+    font-size: 11px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    color:var(--primary);
+    color: var(--primary);
 
-    white-space:nowrap;
+    white-space: nowrap;
 
-    transition:.35s;
+    transition: .35s;
 
-    pointer-events:none;
+    pointer-events: none;
 
 }
 
 /* Hover */
 
-.client-logo:hover{
+.client-logo:hover {
 
-    transform:translateY(-8px);
+    transform: translateY(-8px);
 
-    box-shadow:0 15px 35px rgba(15,76,129,.10);
+    box-shadow: 0 15px 35px rgba(15, 76, 129, .10);
 
-    border-color:rgba(15,76,129,.12);
-
-}
-
-.client-logo:hover::before{
-
-    width:100%;
+    border-color: rgba(15, 76, 129, .12);
 
 }
 
-.client-logo:hover img{
+.client-logo:hover::before {
 
-    transform:translateY(-10px) scale(1.05);
+    width: 100%;
 
 }
 
-.client-logo:hover span{
+.client-logo:hover img {
 
-    opacity:1;
+    transform: translateY(-10px) scale(1.05);
 
-    transform:translate(-50%,0);
+}
+
+.client-logo:hover span {
+
+    opacity: 1;
+
+    transform: translate(-50%, 0);
 
 }
 
 /* Floating */
 
-.client-logo{
+.client-logo {
 
-    animation:floatLogo 6s ease-in-out infinite;
-
-}
-
-.col-lg-2:nth-child(even) .client-logo{
-
-    animation-delay:.4s;
+    animation: floatLogo 6s ease-in-out infinite;
 
 }
 
-@keyframes floatLogo{
+.col-lg-2:nth-child(even) .client-logo {
 
-    0%,100%{
+    animation-delay: .4s;
 
-        transform:translateY(0);
+}
+
+@keyframes floatLogo {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
 
     }
 
-    50%{
+    50% {
 
-        transform:translateY(-2px);
+        transform: translateY(-2px);
 
     }
 
@@ -1378,41 +1379,41 @@ c
 
 /* Responsive */
 
-@media(max-width:991px){
+@media(max-width:991px) {
 
-    .client-logo{
+    .client-logo {
 
-        height:90px;
+        height: 90px;
 
     }
 
-    .client-logo img{
+    .client-logo img {
 
-        max-width:115px;
+        max-width: 115px;
 
-        max-height:42px;
+        max-height: 42px;
 
     }
 
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
 
-    .clients-section{
+    .clients-section {
 
-        padding:45px 0;
-
-    }
-
-    .client-logo{
-
-        height:85px;
+        padding: 45px 0;
 
     }
 
-    .client-logo img{
+    .client-logo {
 
-        max-width:95px;
+        height: 85px;
+
+    }
+
+    .client-logo img {
+
+        max-width: 95px;
 
     }
 
@@ -3721,25 +3722,338 @@ FULL WIDTH CTA
    PART 8 - INNER PAGES + PRODUCTS + UTILITIES
    ========================================================== */
 
+/* ==========================
+   Journey Timeline
+========================== */
 
-/* =========================
-   PAGE BANNER
-========================= */
+.journey-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
+.journey-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #d4af37, #b8860b);
+}
+
+.journey-item {
+    position: relative;
+    width: 50%;
+    padding: 8px 40px;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fadeUp .7s ease forwards;
+}
+
+.journey-item:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.journey-item:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.journey-item:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.journey-item:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.journey-item:nth-child(5) {
+    animation-delay: .5s;
+}
+
+.journey-item:nth-child(6) {
+    animation-delay: .6s;
+}
+
+.journey-item:nth-child(7) {
+    animation-delay: .7s;
+}
+
+.journey-item:nth-child(8) {
+    animation-delay: .8s;
+}
+
+.journey-item:nth-child(9) {
+    animation-delay: .9s;
+}
+
+.journey-item:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.journey-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.journey-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Timeline Dot */
+
+.journey-item::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 18px;
+    height: 18px;
+    background: #d4af37;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(212, 175, 55, .4);
+    z-index: 5;
+}
+
+.journey-item.left::before {
+    right: -11px;
+}
+
+.journey-item.right::before {
+    left: -11px;
+}
+
+/* Card */
+
+.journey-card {
+    background: #fff;
+    padding: 20px 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .35s ease;
+    position: relative;
+}
+
+.journey-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .15);
+}
+
+/* Year Badge */
+
+.journey-year {
+    display: inline-block;
+    background: #d4af37;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+/* Heading */
+
+.journey-card h3 {
+    font-size: 28px;
+    color: #222;
+    margin: 8px 0 10px;
+    line-height: 1.2;
+}
+
+/* Description */
+
+.journey-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Card Arrow */
+
+.journey-item.left .journey-card::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.journey-item.right .journey-card::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+/* Animation */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .journey-timeline::before {
+        left: 30px;
+    }
+
+    .journey-item {
+        width: 100%;
+        left: 0 !important;
+        text-align: left;
+        padding: 10px 20px 10px 75px;
+    }
+
+    .journey-item::before {
+        left: 20px !important;
+    }
+
+    .journey-card::after {
+        display: none;
+    }
+
+    .journey-card h3 {
+        font-size: 22px;
+    }
+
+    .journey-card p {
+        font-size: 15px;
+    }
+
+}
+
+/*====================================
+PREMIUM PAGE BANNER
+====================================*/
 
 .page-banner {
 
     position: relative;
 
-    padding: 180px 0 100px;
+    padding: 140px 0 90px;
 
     overflow: hidden;
 
     background:
-        linear-gradient(135deg,
-            var(--primary) 0%,
-            var(--primary-dark) 100%);
+
+        linear-gradient(rgba(8, 32, 55, .72), rgba(8, 32, 55, .72)),
+
+        url("../images/company/about-banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.page-banner::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(circle at top right,
+
+            rgba(255, 255, 255, .10),
+
+            transparent 45%);
+
+}
+
+.page-banner-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(90deg,
+
+            rgba(15, 76, 129, .35),
+
+            transparent);
+
+}
+
+.page-banner-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+}
+
+.page-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 8px 18px;
+
+    border-radius: 40px;
+
+    background: rgba(255, 255, 255, .12);
+
+    backdrop-filter: blur(12px);
 
     color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+}
+
+.page-tag::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 3px;
+
+    background: var(--secondary);
+
+    border-radius: 20px;
 
 }
 
@@ -3747,41 +4061,131 @@ FULL WIDTH CTA
 
     color: #fff;
 
-    margin-bottom: 15px;
-
     font-size: 60px;
+
+    line-height: 1.15;
+
+    margin-bottom: 22px;
 
 }
 
 .page-banner p {
 
-    color: rgba(255, 255, 255, .85);
+    font-size: 20px;
 
-    max-width: 700px;
+    color: rgba(255, 255, 255, .88);
+
+    max-width: 720px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
 
 }
 
 .breadcrumb-custom {
 
-    display: flex;
+    display: inline-flex;
 
-    flex-wrap: wrap;
+    align-items: center;
 
-    gap: 10px;
+    gap: 14px;
 
-    margin-top: 20px;
+    padding: 12px 22px;
+
+    background: rgba(255, 255, 255, .10);
+
+    border: 1px solid rgba(255, 255, 255, .18);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 50px;
 
 }
 
 .breadcrumb-custom a {
 
-    color: rgba(255, 255, 255, .85);
+    color: #fff;
+
+    text-decoration: none;
 
 }
 
 .breadcrumb-custom span {
 
+    color: rgba(255, 255, 255, .85);
+
+}
+
+.breadcrumb-custom i {
+
     color: var(--secondary);
+
+}
+
+.page-banner {
+
+    animation: bannerZoom 10s ease-in-out infinite alternate;
+
+}
+
+@keyframes bannerZoom {
+
+    from {
+
+        background-size: 100%;
+
+    }
+
+    to {
+
+        background-size: 108%;
+
+    }
+
+}
+
+@media(max-width:991px) {
+
+    .page-banner {
+
+        padding: 110px 0 70px;
+
+    }
+
+    .page-banner h1 {
+
+        font-size: 44px;
+
+    }
+
+    .page-banner p {
+
+        font-size: 18px;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .page-banner {
+
+        padding: 90px 0 60px;
+
+    }
+
+    .page-banner h1 {
+
+        font-size: 34px;
+
+    }
+
+    .page-banner p {
+
+        font-size: 16px;
+
+    }
 
 }
 
