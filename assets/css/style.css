@@ -3022,6 +3022,7 @@ DOWNLOAD CENTER
 
 }
 
+
 /* ==========================
    Right
 ========================== */
@@ -3166,7 +3167,7 @@ DOWNLOAD CENTER
 
 
 /* =========================
-   CONTACT SECTION
+   CONTACT SECTION Old
 ========================= */
 
 .contact-section {
@@ -3254,7 +3255,51 @@ DOWNLOAD CENTER
 
 
 /* =========================
-   CONTACT FORM
+   CONTACT SECTION New
+========================= */
+
+.contact-card {
+    border-radius: 20px;
+    transition: .35s;
+    overflow: hidden;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+.contact-image {
+    max-width: 220px;
+}
+
+.contact-label {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: #eef7ff;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.contact-info h6 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* =========================
+   CONTACT FORM Old
 ========================= */
 
 .contact-form {
@@ -3307,6 +3352,103 @@ textarea.form-control {
 
 }
 
+/* =========================
+   CONTACT FORM New
+========================= */
+
+.support-card {
+    text-align: center;
+}
+
+.support-image {
+    max-width: 220px;
+}
+
+.form-control,
+.form-select {
+
+    height: 52px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    box-shadow: none;
+
+}
+
+.form-control:focus,
+.form-select:focus {
+
+    border-color: var(--primary-color);
+    box-shadow: none;
+
+}
+
+textarea.form-control {
+
+    height: 160px !important;
+    resize: none;
+    padding-top: 15px;
+
+}
+
+.download-card h3 {
+
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+
+.download-card iframe {
+
+    border-radius: 18px;
+
+}
+
+#inquiry .section-title {
+
+    margin-bottom: 40px;
+
+}
+
+.facility-box {
+
+    border-radius: 18px;
+
+}
+
+
+.office-card {
+
+    overflow: hidden;
+
+}
+
+.office-image {
+
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+
+}
+
+.office-card hr {
+
+    margin: 30px 0;
+
+}
+
+.office-card h6 {
+
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.office-card p {
+
+    color: #666;
+
+}
 
 /*====================================
 FULL WIDTH CTA
