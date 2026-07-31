@@ -40,7 +40,7 @@
             "Sealants",
             "PVC"
         ],
-        "image": "assets/images/products/PCC.jpg",
+        "image": "/assets/images/products/precipitatedCalciumCarbonate (PCC).jpg",
         "description": "Provides controlled particle size, brightness and functional performance in specialty formulations.",
         "link": "products/pcc.html",
         "featured": true,
@@ -108,7 +108,7 @@
             "Engineering Plastics",
             "Industrial Fillers"
         ],
-        "image": "assets/images/products/SyntheticBarytes.jpg",
+        "image": "assets/images/products/Synthetic Barytes.jpg",
         "description": "Delivers consistent density and purity for demanding industrial formulations.",
         "link": "products/synthetic-barytes.html",
         "featured": false,
@@ -202,7 +202,7 @@
             "Paper",
             "Ceramics"
         ],
-        "image": "assets/images/products/HydrousClay.jpg",
+        "image": "assets/images/products/Hydrousclaypowder.jpg",
         "description": "Provides improved suspension, brightness and workability in water-based formulations.",
         "link": "products/hydrous-clay.html",
         "featured": false,
@@ -224,7 +224,7 @@
             "Construction Materials",
             "Ceramics"
         ],
-        "image": "assets/images/products/CalcinedClay.jpg",
+        "image": "assets/images/products/Calcinedclaypowder.jpg",
         "description": "Improves brightness, scrub resistance and mechanical properties in coating systems.",
         "link": "products/calcined-clay.html",
         "featured": false,
@@ -312,7 +312,7 @@
             "Cosmetics",
             "Engineering Plastics"
         ],
-        "image": "assets/images/products/MicaPowder.jpg",
+        "image": "assets/images/products/Mica Powder.jpg",
         "description": "Improves weather resistance, barrier properties and decorative appearance.",
         "link": "products/mica-powder.html",
         "featured": false,
@@ -358,11 +358,120 @@
             "Paper",
             "Printing Inks"
         ],
-        "image": "assets/images/products/TitaniumDioxide.jpg",
+        "image": "assets/images/products/Titanium Dioxide - White.png",
         "description": "Provides opacity, brightness and whiteness in a wide range of formulations.",
         "link": "products/titanium-dioxide.html",
         "featured": true,
         "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "aluminium-compound",
+        "name": "Aluminium Compound",
+        "shortName": "Aluminium Compound",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Coatings",
+            "Construction"
+        ],
+        "applications": [
+            "Industrial Fillers",
+            "Coatings",
+            "Construction Materials"
+        ],
+        "image": "assets/images/products/AluminiumCompound.jpg",
+        "description": "Provides functional mineral properties for industrial formulations.",
+        "link": "products/aluminium-compound.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "bentonite-clay",
+        "name": "Bentonite Clay",
+        "shortName": "Bentonite",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Construction",
+            "Foundry"
+        ],
+        "applications": [
+            "Rheology Control",
+            "Foundry",
+            "Industrial Fillers"
+        ],
+        "image": "assets/images/products/bentoniteclay.jpg",
+        "description": "Provides swelling, binding and suspension properties in industrial applications.",
+        "link": "products/bentonite-clay.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "bleaching-earth",
+        "name": "Bleaching Earth",
+        "shortName": "Bleaching Earth",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Chemicals",
+            "Oil Processing"
+        ],
+        "applications": [
+            "Adsorbents",
+            "Purification",
+            "Filtration"
+        ],
+        "image": "assets/images/products/BleachingEarth.jpg",
+        "description": "Used as an adsorbent material for purification and refining applications.",
+        "link": "products/bleaching-earth.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "fumed-silica",
+        "name": "Fumed Silica",
+        "shortName": "Fumed Silica",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Adhesives",
+            "Silicones"
+        ],
+        "applications": [
+            "Rheology Control",
+            "Sealants",
+            "Coatings"
+        ],
+        "image": "assets/images/products/Fumed Silica.jpg",
+        "description": "Provides thickening, reinforcement and anti-settling properties.",
+        "link": "products/fumed-silica.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "tio2-replacement",
+        "name": "Titanium Dioxide Replacement",
+        "shortName": "TiO₂ Replacement",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Coatings"
+        ],
+        "applications": [
+            "Paints",
+            "Industrial Coatings",
+            "Plastic Compounds"
+        ],
+        "image": "assets/images/products/TIO2_Replacement.png",
+        "description": "Mineral alternative designed to improve cost efficiency while maintaining opacity performance.",
+        "link": "products/tio2-replacement.html",
+        "featured": false,
+        "badge": "",
         "status": "active"
     },
     {
@@ -587,6 +696,158 @@
         "status": "active"
     },
     {
+        "id": "acrylic-thickener",
+        "name": "Acrylic Thickener",
+        "shortName": "Acrylic Thickener",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Coatings",
+            "Construction"
+        ],
+        "applications": [
+            "Water-Based Paints",
+            "Coatings",
+            "Construction Chemicals"
+        ],
+        "image": "assets/images/products/AcrylicThickener.jpg",
+        "description": "Improves viscosity control, flow properties and stability in water-based formulations.",
+        "link": "products/acrylic-thickener.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "zinc-oxide",
+        "name": "Zinc Oxide",
+        "shortName": "ZnO",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Rubber",
+            "Paints",
+            "Chemicals"
+        ],
+        "applications": [
+            "Rubber Compounds",
+            "Coatings",
+            "Industrial Applications"
+        ],
+        "image": "assets/images/products/Activators - Zinc Oxide.png",
+        "description": "Used as a functional additive to improve performance and stability in industrial formulations.",
+        "link": "products/zinc-oxide.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "biocides",
+        "name": "Biocides",
+        "shortName": "Biocides",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Coatings",
+            "Construction"
+        ],
+        "applications": [
+            "Preservatives",
+            "Paint Protection",
+            "Industrial Formulations"
+        ],
+        "image": "assets/images/products/Biocides.jpg",
+        "description": "Controls microbial growth and improves product stability.",
+        "link": "products/biocides.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "defoamer",
+        "name": "Defoamer",
+        "shortName": "Defoamer",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Coatings",
+            "Adhesives"
+        ],
+        "applications": [
+            "Paint Manufacturing",
+            "Coatings",
+            "Construction Chemicals"
+        ],
+        "image": "assets/images/products/Defoamer.jpg",
+        "description": "Reduces foam formation and improves surface quality during processing.",
+        "link": "products/defoamer.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "dispersing-agent",
+        "name": "Dispersing Agent",
+        "shortName": "Dispersant",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Coatings"
+        ],
+        "applications": [
+            "Pigment Dispersion",
+            "Masterbatch",
+            "Coatings"
+        ],
+        "image": "assets/images/products/Dispersing Agent.jpg",
+        "description": "Improves pigment dispersion, stability and formulation consistency.",
+        "link": "products/dispersing-agent.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "rdp",
+        "name": "Redispersible Polymer Powder (RDP)",
+        "shortName": "RDP",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Construction",
+            "Dry Mix Mortars"
+        ],
+        "applications": [
+            "Tile Adhesives",
+            "Wall Putty",
+            "Cement Mortars"
+        ],
+        "image": "assets/images/products/RDP.jpg",
+        "description": "Improves adhesion, flexibility and durability in cement-based products.",
+        "link": "products/rdp.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "organo-clay",
+        "name": "Organo Clay Rheological Additive",
+        "shortName": "Organo Clay",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Coatings",
+            "Adhesives"
+        ],
+        "applications": [
+            "Rheology Control",
+            "Solvent Based Coatings"
+        ],
+        "image": "assets/images/products/Organo Clays – Rheologica.jpg",
+        "description": "Improves viscosity control, suspension and stability.",
+        "link": "products/organo-clay.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
         "id": "pe-wax",
         "name": "PE Wax",
         "shortName": "PE Wax",
@@ -626,6 +887,28 @@
         "image": "assets/images/products/MicroWax.jpg",
         "description": "Enhances flexibility, moisture resistance and surface protection.",
         "link": "products/micro-wax.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "wax-additives",
+        "name": "Wax And Wax Additives",
+        "shortName": "Wax Additives",
+        "category": "Waxes",
+        "industry": [
+            "Plastics",
+            "Coatings",
+            "Printing"
+        ],
+        "applications": [
+            "Surface Modification",
+            "Processing Aid",
+            "Lubrication"
+        ],
+        "image": "assets/images/products/Wax And Wax Additives.jpg",
+        "description": "Improves slip, surface finish and processing performance.",
+        "link": "products/wax-additives.html",
         "featured": false,
         "badge": "",
         "status": "active"
@@ -672,6 +955,71 @@
         "link": "products/pigments.html",
         "featured": true,
         "badge": "Featured",
+        "status": "active"
+    },
+    {
+        "id": "natural-red-oxide",
+        "name": "Natural Red Oxide",
+        "shortName": "Natural Red Oxide",
+        "category": "Pigments",
+        "industry": [
+            "Construction",
+            "Paints"
+        ],
+        "applications": [
+            "Concrete Coloring",
+            "Paints",
+            "Coatings"
+        ],
+        "image": "assets/images/products/NaturalRedOxide.jpg",
+        "description": "Provides durable natural coloration and weather resistance.",
+        "link": "products/natural-red-oxide.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "synthetic-red-oxide",
+        "name": "Synthetic Red Oxide",
+        "shortName": "Synthetic Red Oxide",
+        "category": "Pigments",
+        "industry": [
+            "Paints",
+            "Construction",
+            "Plastics"
+        ],
+        "applications": [
+            "Decorative Coatings",
+            "Cement Products",
+            "Color Pigments"
+        ],
+        "image": "assets/images/products/SyntheticRedOxide.jpg",
+        "description": "Provides consistent shade and high coloring strength.",
+        "link": "products/synthetic-red-oxide.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "organic-pigment",
+        "name": "Organic Pigment",
+        "shortName": "Organic Pigments",
+        "category": "Pigments",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Printing Inks"
+        ],
+        "applications": [
+            "Coloration",
+            "Paints",
+            "Plastic Applications"
+        ],
+        "image": "assets/images/products/OrganicPigment.jpg",
+        "description": "Provides strong coloration and excellent visual performance.",
+        "link": "products/organic-pigment.html",
+        "featured": false,
+        "badge": "",
         "status": "active"
     }
 ]
