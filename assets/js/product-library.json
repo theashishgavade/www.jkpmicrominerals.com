@@ -1,0 +1,677 @@
+[
+    {
+        "id": "gcc",
+        "name": "Ground Calcium Carbonate (GCC)",
+        "shortName": "GCC",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Rubber",
+            "Construction"
+        ],
+        "applications": [
+            "Paints & Coatings",
+            "Masterbatch",
+            "PVC",
+            "Adhesives"
+        ],
+        "image": "assets/images/products/GCC.jpg",
+        "description": "Used as a mineral extender to improve opacity, surface finish and cost efficiency across multiple applications.",
+        "link": "products/gcc.html",
+        "featured": true,
+        "badge": "Best Seller",
+        "status": "active"
+    },
+    {
+        "id": "pcc",
+        "name": "Precipitated Calcium Carbonate (PCC)",
+        "shortName": "PCC",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Paper",
+            "Plastics",
+            "Rubber"
+        ],
+        "applications": [
+            "Paints & Coatings",
+            "Paper",
+            "Sealants",
+            "PVC"
+        ],
+        "image": "assets/images/products/PCC.jpg",
+        "description": "Provides controlled particle size, brightness and functional performance in specialty formulations.",
+        "link": "products/pcc.html",
+        "featured": true,
+        "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "coated-gcc",
+        "name": "Coated Ground Calcium Carbonate",
+        "shortName": "Coated GCC",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Plastics",
+            "Rubber",
+            "Masterbatch"
+        ],
+        "applications": [
+            "Masterbatch",
+            "PVC",
+            "Compounds",
+            "Polymers"
+        ],
+        "image": "assets/images/products/CoatedGCC.jpg",
+        "description": "Improves filler dispersion, processability and compatibility in polymer systems.",
+        "link": "products/coated-gcc.html",
+        "featured": true,
+        "badge": "Featured",
+        "status": "active"
+    },
+    {
+        "id": "barytes",
+        "name": "Barytes",
+        "shortName": "Barytes",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Oil & Gas",
+            "Rubber"
+        ],
+        "applications": [
+            "Paints",
+            "Coatings",
+            "Drilling Fluids",
+            "Friction Materials"
+        ],
+        "image": "assets/images/products/Barytes.jpg",
+        "description": "Provides high density, chemical stability and improved performance in specialized applications.",
+        "link": "products/barytes.html",
+        "featured": true,
+        "badge": "Best Seller",
+        "status": "active"
+    },
+    {
+        "id": "synthetic-barytes",
+        "name": "Synthetic Barytes",
+        "shortName": "Synthetic Barytes",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Specialty Chemicals"
+        ],
+        "applications": [
+            "High Performance Coatings",
+            "Engineering Plastics",
+            "Industrial Fillers"
+        ],
+        "image": "assets/images/products/SyntheticBarytes.jpg",
+        "description": "Delivers consistent density and purity for demanding industrial formulations.",
+        "link": "products/synthetic-barytes.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "talc-powder",
+        "name": "Talc Powder",
+        "shortName": "Talc",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Paper",
+            "Ceramics"
+        ],
+        "applications": [
+            "Paints",
+            "Plastic Compounds",
+            "Paper",
+            "Ceramics"
+        ],
+        "image": "assets/images/products/TalcPowder.jpg",
+        "description": "Improves smoothness, dimensional stability and processing characteristics in industrial formulations.",
+        "link": "products/talc-powder.html",
+        "featured": true,
+        "badge": "Best Seller",
+        "status": "active"
+    },
+    {
+        "id": "dolomite",
+        "name": "Dolomite",
+        "shortName": "Dolomite",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Glass",
+            "Construction",
+            "Plastics"
+        ],
+        "applications": [
+            "Paints",
+            "Construction",
+            "Glass",
+            "PVC"
+        ],
+        "image": "assets/images/products/Dolomite.jpg",
+        "description": "Used as a functional filler to enhance strength, durability and processing performance.",
+        "link": "products/dolomite.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "kaolin",
+        "name": "Kaolin",
+        "shortName": "Kaolin",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Paper",
+            "Ceramics",
+            "Rubber"
+        ],
+        "applications": [
+            "Paints",
+            "Paper",
+            "Ceramics",
+            "Sealants"
+        ],
+        "image": "assets/images/products/Kaolin.jpg",
+        "description": "Enhances brightness, opacity and surface finish in industrial formulations.",
+        "link": "products/kaolin.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "hydrous-clay",
+        "name": "Hydrous Clay",
+        "shortName": "Hydrous Clay",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Paper",
+            "Ceramics"
+        ],
+        "applications": [
+            "Architectural Coatings",
+            "Paper",
+            "Ceramics"
+        ],
+        "image": "assets/images/products/HydrousClay.jpg",
+        "description": "Provides improved suspension, brightness and workability in water-based formulations.",
+        "link": "products/hydrous-clay.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "calcined-clay",
+        "name": "Calcined Clay",
+        "shortName": "Calcined Clay",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Construction",
+            "Ceramics"
+        ],
+        "applications": [
+            "Industrial Coatings",
+            "Construction Materials",
+            "Ceramics"
+        ],
+        "image": "assets/images/products/CalcinedClay.jpg",
+        "description": "Improves brightness, scrub resistance and mechanical properties in coating systems.",
+        "link": "products/calcined-clay.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "silica-powder",
+        "name": "Silica Powder",
+        "shortName": "Silica",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Construction",
+            "Paints",
+            "Foundry"
+        ],
+        "applications": [
+            "Construction",
+            "Foundry",
+            "Industrial Fillers"
+        ],
+        "image": "assets/images/products/SilicaPowder.jpg",
+        "description": "Used to improve hardness, abrasion resistance and dimensional stability.",
+        "link": "products/silica-powder.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "perlite",
+        "name": "Perlite",
+        "shortName": "Perlite",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Construction",
+            "Insulation",
+            "Agriculture"
+        ],
+        "applications": [
+            "Lightweight Fillers",
+            "Insulation",
+            "Growing Media"
+        ],
+        "image": "assets/images/products/Perlite.jpg",
+        "description": "Provides lightweight insulation and improves thermal performance.",
+        "link": "products/perlite.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "graphite",
+        "name": "Graphite",
+        "shortName": "Graphite",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Lubricants",
+            "Foundry",
+            "Refractories"
+        ],
+        "applications": [
+            "Lubricants",
+            "Foundry",
+            "Refractory Products"
+        ],
+        "image": "assets/images/products/Graphite.jpg",
+        "description": "Offers lubrication, thermal conductivity and electrical conductivity.",
+        "link": "products/graphite.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "mica-powder",
+        "name": "Mica Powder",
+        "shortName": "Mica",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Cosmetics",
+            "Plastics"
+        ],
+        "applications": [
+            "Decorative Coatings",
+            "Cosmetics",
+            "Engineering Plastics"
+        ],
+        "image": "assets/images/products/MicaPowder.jpg",
+        "description": "Improves weather resistance, barrier properties and decorative appearance.",
+        "link": "products/mica-powder.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "magnesium-oxide",
+        "name": "Magnesium Oxide",
+        "shortName": "MgO",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Rubber",
+            "Refractories",
+            "Chemicals"
+        ],
+        "applications": [
+            "Rubber",
+            "Refractory Products",
+            "Chemical Processing"
+        ],
+        "image": "assets/images/products/MagnesiumOxide.png",
+        "description": "Functions as an acid acceptor and curing activator in industrial applications.",
+        "link": "products/magnesium-oxide.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "titanium-dioxide",
+        "name": "Titanium Dioxide",
+        "shortName": "TiO₂",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Paper",
+            "Printing Inks"
+        ],
+        "applications": [
+            "Paints",
+            "Plastics",
+            "Paper",
+            "Printing Inks"
+        ],
+        "image": "assets/images/products/TitaniumDioxide.jpg",
+        "description": "Provides opacity, brightness and whiteness in a wide range of formulations.",
+        "link": "products/titanium-dioxide.html",
+        "featured": true,
+        "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "epoxy-resin",
+        "name": "Epoxy Resin",
+        "shortName": "Epoxy",
+        "category": "Resins & Binders",
+        "industry": [
+            "Coatings",
+            "Adhesives",
+            "Composites",
+            "Construction"
+        ],
+        "applications": [
+            "Industrial Coatings",
+            "Adhesives",
+            "Flooring",
+            "Composites"
+        ],
+        "image": "assets/images/products/EpoxyResin.jpg",
+        "description": "Provides strong adhesion, chemical resistance and durable protective coatings.",
+        "link": "products/epoxy-resin.html",
+        "featured": true,
+        "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "polyester-resin",
+        "name": "Polyester Resin",
+        "shortName": "Polyester",
+        "category": "Resins & Binders",
+        "industry": [
+            "FRP",
+            "Marine",
+            "Construction"
+        ],
+        "applications": [
+            "FRP Products",
+            "Panels",
+            "Pipes",
+            "Moulded Components"
+        ],
+        "image": "assets/images/products/PolyesterResin.jpg",
+        "description": "Used for manufacturing reinforced composite and fiberglass products.",
+        "link": "products/polyester-resin.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "hydrocarbon-resin",
+        "name": "Hydrocarbon Resin",
+        "shortName": "Hydrocarbon",
+        "category": "Resins & Binders",
+        "industry": [
+            "Adhesives",
+            "Rubber",
+            "Road Marking"
+        ],
+        "applications": [
+            "Hot Melt Adhesives",
+            "Rubber Compounds",
+            "Road Marking"
+        ],
+        "image": "assets/images/products/HydrocarbonResin.jpg",
+        "description": "Improves tack, adhesion and compatibility in adhesive and rubber systems.",
+        "link": "products/hydrocarbon-resin.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "styrene-acrylic",
+        "name": "Styrene Acrylic",
+        "shortName": "Styrene Acrylic",
+        "category": "Resins & Binders",
+        "industry": [
+            "Paints",
+            "Construction"
+        ],
+        "applications": [
+            "Exterior Paints",
+            "Water-Based Coatings",
+            "Primers"
+        ],
+        "image": "assets/images/products/StyreneAcrylic.jpg",
+        "description": "Provides durability, water resistance and excellent weatherability.",
+        "link": "products/styrene-acrylic.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "pure-acrylic",
+        "name": "Pure Acrylic",
+        "shortName": "Pure Acrylic",
+        "category": "Resins & Binders",
+        "industry": [
+            "Paints",
+            "Construction",
+            "Waterproofing"
+        ],
+        "applications": [
+            "Premium Exterior Paints",
+            "Protective Coatings",
+            "Waterproofing"
+        ],
+        "image": "assets/images/products/PureAcrylic.jpg",
+        "description": "Offers long-term weather resistance, flexibility and color retention.",
+        "link": "products/pure-acrylic.html",
+        "featured": true,
+        "badge": "Featured",
+        "status": "active"
+    },
+    {
+        "id": "additives",
+        "name": "Additives / Dispersing Agents",
+        "shortName": "Additives",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Construction",
+            "Adhesives"
+        ],
+        "applications": [
+            "Paints",
+            "Coatings",
+            "Construction Chemicals"
+        ],
+        "image": "assets/images/products/Additives.jpg",
+        "description": "Improves pigment dispersion, formulation stability and processing efficiency.",
+        "link": "products/additives.html",
+        "featured": true,
+        "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "hec",
+        "name": "Hydroxyethyl Cellulose (HEC)",
+        "shortName": "HEC",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Paints",
+            "Construction",
+            "Personal Care"
+        ],
+        "applications": [
+            "Emulsion Paints",
+            "Tile Adhesives",
+            "Cosmetics"
+        ],
+        "image": "assets/images/products/HEC.jpg",
+        "description": "Acts as a thickener, stabilizer and water-retention agent in water-based formulations.",
+        "link": "products/hec.html",
+        "featured": true,
+        "badge": "Best Seller",
+        "status": "active"
+    },
+    {
+        "id": "cmc",
+        "name": "Carboxymethyl Cellulose (CMC)",
+        "shortName": "CMC",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Detergents",
+            "Construction",
+            "Paper"
+        ],
+        "applications": [
+            "Paper",
+            "Construction Chemicals",
+            "Industrial Formulations"
+        ],
+        "image": "assets/images/products/CMC.jpg",
+        "description": "Functions as a thickener, binder and suspension stabilizer in aqueous systems.",
+        "link": "products/cmc.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "hpmc",
+        "name": "Hydroxypropyl Methyl Cellulose (HPMC)",
+        "shortName": "HPMC",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Construction",
+            "Paints",
+            "Pharmaceutical"
+        ],
+        "applications": [
+            "Tile Adhesives",
+            "Wall Putty",
+            "Dry Mix Mortars"
+        ],
+        "image": "assets/images/products/HPMC.jpg",
+        "description": "Provides thickening, film formation and water retention in construction formulations.",
+        "link": "products/hpmc.html",
+        "featured": true,
+        "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "mhec",
+        "name": "Methyl Hydroxyethyl Cellulose (MHEC)",
+        "shortName": "MHEC",
+        "category": "Additives & Thickeners",
+        "industry": [
+            "Construction",
+            "Paints"
+        ],
+        "applications": [
+            "Cement Mortars",
+            "Tile Adhesives",
+            "Wall Putty"
+        ],
+        "image": "assets/images/products/MHEC.jpg",
+        "description": "Improves workability, water retention and open time in cement-based products.",
+        "link": "products/mhec.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "pe-wax",
+        "name": "PE Wax",
+        "shortName": "PE Wax",
+        "category": "Waxes",
+        "industry": [
+            "Plastics",
+            "Masterbatch",
+            "PVC"
+        ],
+        "applications": [
+            "PVC Processing",
+            "Masterbatch",
+            "Plastic Compounds"
+        ],
+        "image": "assets/images/products/PEWax.jpg",
+        "description": "Improves lubrication, dispersion and surface finish during polymer processing.",
+        "link": "products/pe-wax.html",
+        "featured": true,
+        "badge": "Popular",
+        "status": "active"
+    },
+    {
+        "id": "micro-wax",
+        "name": "Micro Wax",
+        "shortName": "Micro Wax",
+        "category": "Waxes",
+        "industry": [
+            "Packaging",
+            "Polishes",
+            "Rubber"
+        ],
+        "applications": [
+            "Polishes",
+            "Rubber Processing",
+            "Protective Coatings"
+        ],
+        "image": "assets/images/products/MicroWax.jpg",
+        "description": "Enhances flexibility, moisture resistance and surface protection.",
+        "link": "products/micro-wax.html",
+        "featured": false,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "solvents",
+        "name": "Industrial Solvents",
+        "shortName": "Solvents",
+        "category": "Solvents",
+        "industry": [
+            "Paints",
+            "Coatings",
+            "Printing Inks"
+        ],
+        "applications": [
+            "Paint Manufacturing",
+            "Cleaning",
+            "Ink Formulations"
+        ],
+        "image": "assets/images/products/Solvents.jpg",
+        "description": "Supports viscosity control, application properties and formulation consistency.",
+        "link": "products/solvents.html",
+        "featured": true,
+        "badge": "",
+        "status": "active"
+    },
+    {
+        "id": "pigments",
+        "name": "Industrial Pigments",
+        "shortName": "Pigments",
+        "category": "Pigments",
+        "industry": [
+            "Paints",
+            "Plastics",
+            "Printing Inks"
+        ],
+        "applications": [
+            "Paints",
+            "Plastic Coloration",
+            "Printing Inks"
+        ],
+        "image": "assets/images/products/Pigments.jpg",
+        "description": "Provides color, opacity and visual consistency across industrial applications.",
+        "link": "products/pigments.html",
+        "featured": true,
+        "badge": "Featured",
+        "status": "active"
+    }
+]
