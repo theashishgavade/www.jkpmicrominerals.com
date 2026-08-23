@@ -2,151 +2,151 @@
     {
         "name": "Ground Calcium Carbonate (GCC)",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/gcc.html"
+        "file": "products/gcc.html"
     },
     {
         "name": "Precipitated Calcium Carbonate (PCC)",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/pcc.html"
+        "file": "products/pcc.html"
     },
     {
         "name": "Coated Ground Calcium Carbonate",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/coated-gcc.html"
+        "file": "products/coated-gcc.html"
     },
     {
         "name": "Barytes",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/barytes.html"
+        "file": "products/barytes.html"
     },
     {
         "name": "Synthetic Barytes",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/synthetic-barytes.html"
+        "file": "products/synthetic-barytes.html"
     },
     {
         "name": "Talc Powder",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/talc-powder.html"
+        "file": "products/talc-powder.html"
     },
     {
         "name": "Dolomite",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/dolomite.html"
+        "file": "products/dolomite.html"
     },
     {
         "name": "Kaolin",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/kaolin.html"
+        "file": "products/kaolin.html"
     },
     {
         "name": "Silica Powder",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/silica-powder.html"
+        "file": "products/silica-powder.html"
     },
     {
         "name": "Perlite",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/perlite.html"
+        "file": "products/perlite.html"
     },
     {
         "name": "Graphite",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/graphite.html"
+        "file": "products/graphite.html"
     },
     {
         "name": "Mica Powder",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/mica-powder.html"
+        "file": "products/mica-powder.html"
     },
     {
         "name": "Magnesium Oxide",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/magnesium-oxide.html"
+        "file": "products/magnesium-oxide.html"
     },
     {
         "name": "Titanium Dioxide (TiO₂)",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/titanium-dioxide.html"
+        "file": "products/titanium-dioxide.html"
     },
     {
         "name": "Hydrous Clay",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/hydrous-clay.html"
+        "file": "products/hydrous-clay.html"
     },
     {
         "name": "Calcined Clay",
         "category": "Extenders / Fillers",
-        "file": "assets/html/tds/calcined-clay.html"
+        "file": "products/calcined-clay.html"
     },
     {
         "name": "Epoxy Resin",
         "category": "Resins & Binders",
-        "file": "assets/html/tds/epoxy-resin.html"
+        "file": "products/epoxy-resin.html"
     },
     {
         "name": "Polyester Resin",
         "category": "Resins & Binders",
-        "file": "assets/html/tds/polyester-resin.html"
+        "file": "products/polyester-resin.html"
     },
     {
         "name": "Hydrocarbon Resin",
         "category": "Resins & Binders",
-        "file": "assets/html/tds/hydrocarbon-resin.html"
+        "file": "products/hydrocarbon-resin.html"
     },
     {
         "name": "Styrene Acrylic",
         "category": "Resins & Binders",
-        "file": "assets/html/tds/styrene-acrylic.html"
+        "file": "products/styrene-acrylic.html"
     },
     {
         "name": "Pure Acrylic",
         "category": "Resins & Binders",
-        "file": "assets/html/tds/pure-acrylic.html"
+        "file": "products/pure-acrylic.html"
     },
     {
         "name": "Additives / Dispersing Agents",
         "category": "Additives & Thickeners",
-        "file": "assets/html/tds/additives.html"
+        "file": "products/additives.html"
     },
     {
         "name": "Hydroxyethyl Cellulose (HEC)",
         "category": "Additives & Thickeners",
-        "file": "assets/html/tds/hec.html"
+        "file": "products/hec.html"
     },
     {
         "name": "Carboxymethyl Cellulose (CMC)",
         "category": "Additives & Thickeners",
-        "file": "assets/html/tds/cmc.html"
+        "file": "products/cmc.html"
     },
     {
         "name": "Hydroxypropyl Methyl Cellulose (HPMC)",
         "category": "Additives & Thickeners",
-        "file": "assets/html/tds/hpmc.html"
+        "file": "products/hpmc.html"
     },
     {
         "name": "Methyl Hydroxyethyl Cellulose (MHEC)",
         "category": "Additives & Thickeners",
-        "file": "assets/html/tds/mhec.html"
+        "file": "products/mhec.html"
     },
     {
         "name": "Polyethylene Wax (PE Wax)",
         "category": "Waxes",
-        "file": "assets/html/tds/pe-wax.html"
+        "file": "products/pe-wax.html"
     },
     {
         "name": "Microcrystalline Wax",
         "category": "Waxes",
-        "file": "assets/html/tds/micro-wax.html"
+        "file": "products/micro-wax.html"
     },
     {
         "name": "Solvents",
         "category": "Solvents",
-        "file": "assets/html/tds/solvents.html"
+        "file": "products/solvents.html"
     },
     {
         "name": "All Pigments",
         "category": "Pigments",
-        "file": "assets/html/tds/pigments.html"
+        "file": "products/pigments.html"
     }
 ]

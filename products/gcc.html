@@ -906,6 +906,43 @@
 
     <script src="../assets/js/main.js"></script>
 
+        <script>
+        async function loadSectionFromIndex(sectionId, targetId) {
+
+            try {
+
+                const response = await fetch('/index.html');
+
+                const html = await response.text();
+
+                const parser = new DOMParser();
+
+                const doc = parser.parseFromString(html, 'text/html');
+
+                const section = doc.getElementById(sectionId);
+
+                if (section) {
+
+                    document.getElementById(targetId).innerHTML = section.outerHTML;
+
+                }
+
+            } catch (error) {
+
+                console.error('Unable to load section:', error);
+
+            }
+
+        }
+
+        loadSectionFromIndex('clients-section', 'clients-placeholder');
+        loadSectionFromIndex('industry-section', 'industry-placeholder');
+        loadSectionFromIndex('cta-section', 'cta-placeholder');
+        loadSectionFromIndex('footer-section', 'footer-placeholder');
+        loadSectionFromIndex('stats-section', 'stats-placeholder');
+        loadSectionFromIndex('why-choose-section', 'why-choose-placeholder');
+        loadSectionFromIndex('whatsapp-btn', 'whatsapp-placeholder');
+    </script>
 </body>
 
 </html>
