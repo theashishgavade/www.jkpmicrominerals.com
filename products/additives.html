@@ -907,168 +907,7 @@
 
     <!-- INDUSTRIES WE SERVE -->
 
-    <section class="section-padding bg-light">
-
-
-        <div class="container">
-
-            <div class="section-title text-center">
-
-                <span>
-                    Applications
-                </span>
-
-                <h2>
-                    Industries We Serve
-                </h2>
-
-                <p>
-
-                    Our specialty additives are trusted by manufacturers
-                    across diverse industries to improve product
-                    performance, processing efficiency and formulation
-                    stability.
-
-                </p>
-
-            </div>
-
-            <div class="row g-4">
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-paint-roller"></i>
-
-                        <h3>Paints & Coatings</h3>
-
-                        <p>
-                            Dispersion, rheology control, foam control and durability enhancement.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-hard-hat"></i>
-
-                        <h3>Construction Chemicals</h3>
-
-                        <p>
-                            Improved adhesion, water retention and workability.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-cubes"></i>
-
-                        <h3>Plastic & Polymer</h3>
-
-                        <p>
-                            Better processing, lubrication and surface finish.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-link"></i>
-
-                        <h3>Adhesives & Sealants</h3>
-
-                        <p>
-                            Enhanced viscosity control and formulation stability.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-print"></i>
-
-                        <h3>Printing Inks</h3>
-
-                        <p>
-                            Improved pigment dispersion and color development.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-industry"></i>
-
-                        <h3>Industrial Manufacturing</h3>
-
-                        <p>
-                            Consistent performance for specialized industrial applications.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-scroll"></i>
-
-                        <h3>Paper Industry</h3>
-
-                        <p>
-                            Enhanced processing efficiency and product quality.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="facility-box">
-
-                        <i class="fas fa-tshirt"></i>
-
-                        <h3>Textile Industry</h3>
-
-                        <p>
-                            Stabilization and performance enhancement solutions.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </section>
+    <div id="industry-placeholder"></div>
 
     <!-- WHY CHOOSE OUR ADDITIVES -->
 
@@ -1093,12 +932,7 @@
          WHATSAPP BUTTON
     ========================== -->
 
-    <a href="https://wa.me/919137158142" class="whatsapp-btn" target="_blank">
-
-        <i class="fab fa-whatsapp"></i>
-
-    </a>
-
+    <div id="whatsapp-placeholder"></div>
 
     <!-- =========================
          BACK TO TOP
@@ -1136,8 +970,16 @@
 
                 if (section) {
 
-                    document.getElementById(targetId).innerHTML = section.outerHTML;
+                    // Fix images
+                    section.querySelectorAll('img').forEach(img => {
+                        const src = img.getAttribute('src');
 
+                        if (src && !src.startsWith('/') && !src.startsWith('http')) {
+                            img.src = '/' + src;
+                        }
+                    });
+
+                    document.getElementById(targetId).innerHTML = section.outerHTML;
                 }
 
             } catch (error) {
