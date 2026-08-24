@@ -35,6 +35,13 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        /* Show the Products menu when hovering over its navigation item. */
+        .navbar-nav .nav-item.dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -139,14 +146,46 @@
 
                         </li>
 
-                        <li class="nav-item">
-
-                            <a class="nav-link" href="products.html">
-
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="products.html">
                                 Products
-
                             </a>
+
+                            <ul class="dropdown-menu" id="productsDropdown"
+                                style="max-height: 200px; overflow-y: auto;">
+                                <!-- JS will add products here -->
+                            </ul>
                         </li>
+                        <script>
+                            fetch("assets/js/products.json")
+                                .then(response => response.json())
+                                .then(products => {
+
+                                    const dropdown = document.getElementById("productsDropdown");
+
+                                    products.forEach(product => {
+
+                                        // Convert filename to readable name
+                                        const name = product
+                                            .replace(/-/g, " ")
+                                            .replace(/\b\w/g, letter => letter.toUpperCase());
+
+                                        const li = document.createElement("li");
+
+                                        const link = document.createElement("a");
+                                        link.className = "dropdown-item";
+                                        link.href = `products/${product}.html`;
+                                        link.textContent = name;
+
+                                        li.appendChild(link);
+                                        dropdown.appendChild(li);
+                                    });
+
+                                })
+                                .catch(error => {
+                                    console.error("Could not load products:", error);
+                                });
+                        </script>
 
                         <li class="nav-item">
 
@@ -179,23 +218,13 @@
 
                         </li>
 
-                        <li class="nav-item">
-
-                            <a class="nav-link" href="contact.html">
-
-                                Contact
-
-                            </a>
-
-                        </li>
-
                     </ul>
 
                     <div class="nav-cta">
 
                         <a href="contact.html" class="btn-primary-custom">
 
-                            Request Quote
+                            Contact Us
 
                         </a>
 
@@ -1989,15 +2018,15 @@
 
                         <ul class="footer-links">
 
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/index.html">Home</a></li>
 
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="/about.html">About Us</a></li>
 
                             <li><a href="products.html">Products</a></li>
 
-                            <li><a href="industries.html">Industries</a></li>
+                            <li><a href="/industries.html">Industries</a></li>
 
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
 
                         </ul>
 
@@ -2120,7 +2149,7 @@
          WHATSAPP BUTTON
     ========================== -->
 
-    <a href="https://wa.me/919137158142" class="whatsapp-btn" target="_blank" id="whatsapp-btn">
+    <a href="https://wa.me/917506500222" class="whatsapp-btn" target="_blank" id="whatsapp-btn">
 
         <i class="fab fa-whatsapp"></i>
 
