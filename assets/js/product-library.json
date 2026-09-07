@@ -312,7 +312,7 @@
             "Cosmetics",
             "Engineering Plastics"
         ],
-        "image": "assets/images/products/Mica Powder.jpg",
+        "image": "../assets/images/products/Mica powder.jpg",
         "description": "Improves weather resistance, barrier properties and decorative appearance.",
         "link": "products/mica-powder.html",
         "featured": false,
