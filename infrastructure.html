@@ -75,72 +75,7 @@
 
     <!-- HEADER -->
 
-    <header class="main-header">
-
-        <div class="container">
-
-            <nav class="navbar navbar-expand-lg">
-
-                <a class="navbar-brand" href="index.html">
-
-                    <img src="assets/images/logo/logo.png" alt="JKP Microminerals">
-
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-
-                    <span class="navbar-toggler-icon"></span>
-
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html">Products</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="industries.html">Industries</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="infrastructure.html">Infrastructure</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="quality.html">Quality</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="downloads.html">Downloads</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-    <div class="header-space"></div>
-
+    <div id="header-placeholder"></div>
 
     <!-- =========================
      PREMIUM PAGE BANNER
@@ -990,7 +925,7 @@
          WHATSAPP BUTTON
     ========================== -->
 
-<div id="whatsapp-placeholder"></div>
+    <div id="whatsapp-placeholder"></div>
 
 
     <!-- =========================
@@ -1043,6 +978,447 @@
         loadSectionFromIndex('stats-section', 'stats-placeholder');
         loadSectionFromIndex('why-choose-section', 'why-choose-placeholder');
         loadSectionFromIndex('whatsapp-btn', 'whatsapp-placeholder');
+    </script>
+
+    <script>
+
+        async function loadHeaderFromIndex() {
+
+            try {
+
+                // ==========================================
+                // LOAD HEADER FROM INDEX.HTML
+                // ==========================================
+
+                const response = await fetch('index.html');
+
+                if (!response.ok) {
+                    throw new Error('Unable to load index.html');
+                }
+
+                const html = await response.text();
+
+                const parser = new DOMParser();
+
+                const doc = parser.parseFromString(
+                    html,
+                    'text/html'
+                );
+
+                const header =
+                    doc.getElementById('main-header');
+
+                const placeholder =
+                    document.getElementById('header-placeholder');
+
+                if (!header || !placeholder) {
+                    console.error('Header or placeholder not found.');
+                    return;
+                }
+
+                // Insert Header
+                placeholder.innerHTML = header.outerHTML;
+
+
+                // ==========================================
+                // CURRENT PAGE
+                // ==========================================
+
+                const pathname =
+                    window.location.pathname;
+
+                const isProductPage =
+                    pathname.includes('/products/');
+
+                const currentPage =
+                    pathname.split('/').pop() || 'index.html';
+
+
+                // ==========================================
+                // FIX LINKS FOR PRODUCT PAGES
+                // ==========================================
+
+                if (isProductPage) {
+
+                    const rootPages = [
+                        'index.html',
+                        'about.html',
+                        'products.html',
+                        'industries.html',
+                        'infrastructure.html',
+                        'downloads.html',
+                        'contact.html'
+                    ];
+
+                    const links =
+                        placeholder.querySelectorAll('a[href]');
+
+                    links.forEach(link => {
+
+                        let href =
+                            link.getAttribute('href');
+
+                        if (!href) return;
+
+                        if (
+                            href.startsWith('http') ||
+                            href.startsWith('#') ||
+                            href.startsWith('mailto:') ||
+                            href.startsWith('tel:')
+                        ) {
+                            return;
+                        }
+
+                        if (rootPages.includes(href)) {
+
+                            link.setAttribute(
+                                'href',
+                                '../' + href
+                            );
+
+                        }
+
+                    });
+
+
+                    // Fix Logo
+                    const logo =
+                        placeholder.querySelector(
+                            '.navbar-brand img'
+                        );
+
+                    if (logo) {
+
+                        const src =
+                            logo.getAttribute('src');
+
+                        if (
+                            src &&
+                            !src.startsWith('../')
+                        ) {
+
+                            logo.setAttribute(
+                                'src',
+                                '../' + src
+                            );
+
+                        }
+
+                    }
+
+                }
+
+
+                // ==========================================
+                // ACTIVE MENU
+                // ==========================================
+
+                const navLinks =
+                    placeholder.querySelectorAll('.nav-link');
+
+
+                navLinks.forEach(link => {
+
+                    link.classList.remove('active');
+
+                    const href =
+                        link.getAttribute('href');
+
+                    if (!href) return;
+
+                    const linkPage =
+                        href.split('/').pop();
+
+
+                    if (
+                        !isProductPage &&
+                        linkPage === currentPage
+                    ) {
+
+                        link.classList.add('active');
+
+                    }
+
+                });
+
+
+                // Products active on product detail pages
+                if (isProductPage) {
+
+                    const productsButton =
+                        placeholder.querySelector(
+                            '.dropdown-toggle'
+                        );
+
+                    if (productsButton) {
+
+                        productsButton.classList.add('active');
+
+                    }
+
+                }
+
+
+                // ==========================================
+                // LOAD PRODUCTS
+                // ==========================================
+
+                const dropdown =
+                    placeholder.querySelector(
+                        '#productsDropdown'
+                    );
+
+
+                if (dropdown) {
+
+                    const jsonPath =
+                        isProductPage
+                            ? '../assets/js/products.json'
+                            : 'assets/js/products.json';
+
+                    const productPath =
+                        isProductPage
+                            ? '../products/'
+                            : 'products/';
+
+
+                    try {
+
+                        const productsResponse =
+                            await fetch(jsonPath);
+
+                        if (!productsResponse.ok) {
+                            throw new Error(
+                                'Unable to load products.json'
+                            );
+                        }
+
+                        const products =
+                            await productsResponse.json();
+
+
+                        dropdown.innerHTML = '';
+
+
+                        products.forEach(product => {
+
+                            const name =
+                                product
+                                    .replace(/-/g, ' ')
+                                    .replace(
+                                        /\b\w/g,
+                                        letter =>
+                                            letter.toUpperCase()
+                                    );
+
+
+                            const li =
+                                document.createElement('li');
+
+
+                            const link =
+                                document.createElement('a');
+
+
+                            link.className =
+                                'dropdown-item';
+
+
+                            link.href =
+                                productPath +
+                                product +
+                                '.html';
+
+
+                            link.textContent =
+                                name;
+
+
+                            li.appendChild(link);
+
+                            dropdown.appendChild(li);
+
+                        });
+
+
+                    } catch (error) {
+
+                        console.error(
+                            'Could not load products:',
+                            error
+                        );
+
+                    }
+
+                }
+
+
+                // ==========================================
+                // PRODUCTS HOVER DROPDOWN
+                // ==========================================
+
+                const productsMenu =
+                    placeholder.querySelector(
+                        '.nav-item.dropdown'
+                    );
+
+
+                const productsButton =
+                    productsMenu
+                        ? productsMenu.querySelector(
+                            '.dropdown-toggle'
+                        )
+                        : null;
+
+
+                const productsDropdown =
+                    productsMenu
+                        ? productsMenu.querySelector(
+                            '.dropdown-menu'
+                        )
+                        : null;
+
+
+                if (
+                    productsMenu &&
+                    productsButton &&
+                    productsDropdown
+                ) {
+
+                    // --------------------------------------
+                    // DESKTOP HOVER
+                    // --------------------------------------
+
+                    productsMenu.addEventListener(
+                        'mouseenter',
+                        function () {
+
+                            if (window.innerWidth >= 992) {
+
+                                productsMenu.classList.add(
+                                    'show'
+                                );
+
+                                productsDropdown.classList.add(
+                                    'show'
+                                );
+
+                                productsButton.setAttribute(
+                                    'aria-expanded',
+                                    'true'
+                                );
+
+                            }
+
+                        }
+                    );
+
+
+                    productsMenu.addEventListener(
+                        'mouseleave',
+                        function () {
+
+                            if (window.innerWidth >= 992) {
+
+                                productsMenu.classList.remove(
+                                    'show'
+                                );
+
+                                productsDropdown.classList.remove(
+                                    'show'
+                                );
+
+                                productsButton.setAttribute(
+                                    'aria-expanded',
+                                    'false'
+                                );
+
+                            }
+
+                        }
+                    );
+
+
+                    // --------------------------------------
+                    // MOBILE / TABLET CLICK
+                    // --------------------------------------
+
+                    productsButton.addEventListener(
+                        'click',
+                        function (event) {
+
+                            if (window.innerWidth < 992) {
+
+                                event.preventDefault();
+
+                                productsMenu.classList.toggle(
+                                    'show'
+                                );
+
+                                productsDropdown.classList.toggle(
+                                    'show'
+                                );
+
+                            }
+
+                        }
+                    );
+
+                }
+
+
+                // ==========================================
+                // BOOTSTRAP NAVBAR
+                // ==========================================
+
+                if (
+                    typeof bootstrap !== 'undefined'
+                ) {
+
+                    const toggler =
+                        placeholder.querySelector(
+                            '.navbar-toggler'
+                        );
+
+
+                    const navbar =
+                        placeholder.querySelector(
+                            '#mainNavbar'
+                        );
+
+
+                    if (toggler && navbar) {
+
+                        new bootstrap.Collapse(
+                            navbar,
+                            {
+                                toggle: false
+                            }
+                        );
+
+                    }
+
+                }
+
+
+            } catch (error) {
+
+                console.error(
+                    'Unable to load header:',
+                    error
+                );
+
+            }
+
+        }
+
+
+        // ==========================================
+        // LOAD HEADER
+        // ==========================================
+
+        loadHeaderFromIndex();
+
     </script>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
