@@ -1,5 +1,10 @@
 [
     {
+        "name": "aluminium-trihydrate",
+        "category": "Extenders / Fillers",
+        "file": "products/aluminium-trihydrate.html"
+    },
+    {
         "name": "Ground Calcium Carbonate (GCC)",
         "category": "Extenders / Fillers",
         "file": "products/gcc.html"

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        JKP Microminerals (I) Pvt. Ltd. | Industrial Minerals & Specialty Chemicals
+    </title>
+
+    <meta name="description"
+        content="JKP Microminerals (I) Pvt. Ltd. is a leading manufacturer, supplier and distributor of industrial minerals, specialty fillers, additives and performance chemicals serving paints, coatings, plastics, rubber, construction and other industries.">
+
+    <meta name="keywords"
+        content="Industrial Minerals, Calcium Carbonate, GCC, PCC, Talc Powder, Dolomite, Barytes, Kaolin, Specialty Fillers, Additives, JKP Microminerals">
+
+    <meta name="author" content="JKP Microminerals (I) Pvt. Ltd.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../assets/images/logo/favicon.png">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <div class="top-bar">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <div class="top-bar-left">
+
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                            info@jkpmicrominerals.com
+                        </span>
+
+                        <span>
+                            <i class="fas fa-phone"></i>
+                            +91 91371 581 (41 / 42 / 43 / 44 / 45)
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-end">
+
+                    <div class="top-bar-right justify-content-end">
+
+                        <span>
+                            <i class="fas fa-location-dot"></i>
+                            Navi Mumbai, Maharashtra
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+    
+
+
+    <!-- CTA -->
+
+    <div id="cta-placeholder"></div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div id="footer-placeholder"></div>
+
+
+    <!-- =========================
+         WHATSAPP BUTTON
+    ========================== -->
+
+    <div id="whatsapp-placeholder"></div>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <a href="#" class="back-to-top">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </a>
+
+
+    <!-- =========================
+         SCRIPTS
+    ========================== -->
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+        async function loadSectionFromIndex(sectionId, targetId) {
+
+            try {
+
+                const response = await fetch('/index.html');
+
+                const html = await response.text();
+
+                const parser = new DOMParser();
+
+                const doc = parser.parseFromString(html, 'text/html');
+
+                const section = doc.getElementById(sectionId);
+
+                if (section) {
+
+                    // Fix images
+                    section.querySelectorAll('img').forEach(img => {
+                        const src = img.getAttribute('src');
+
+                        if (src && !src.startsWith('/') && !src.startsWith('http')) {
+                            img.src = '/' + src;
+                        }
+                    });
+
+                    document.getElementById(targetId).innerHTML = section.outerHTML;
+                }
+
+            } catch (error) {
+
+                console.error('Unable to load section:', error);
+
+            }
+
+        }
+
+        loadSectionFromIndex('clients-section', 'clients-placeholder');
+        loadSectionFromIndex('industry-section', 'industry-placeholder');
+        loadSectionFromIndex('cta-section', 'cta-placeholder');
+        loadSectionFromIndex('footer-section', 'footer-placeholder');
+        loadSectionFromIndex('stats-section', 'stats-placeholder');
+        loadSectionFromIndex('why-choose-section', 'why-choose-placeholder');
+        loadSectionFromIndex('whatsapp-btn', 'whatsapp-placeholder');
+    </script>
+    <script>
+
+        async function loadHeaderFromIndex() {
+
+            try {
+
+                // ==========================================
+                // LOAD HEADER FROM INDEX.HTML
+                // ==========================================
+
+                const response = await fetch('/index.html');
+
+                if (!response.ok) {
+                    throw new Error('Unable to load index.html');
+                }
+
+                const html = await response.text();
+
+                const parser = new DOMParser();
+
+                const doc = parser.parseFromString(
+                    html,
+                    'text/html'
+                );
+
+                const header =
+                    doc.getElementById('main-header');
+
+                const placeholder =
+                    document.getElementById('header-placeholder');
+
+                if (!header || !placeholder) {
+                    console.error('Header or placeholder not found.');
+                    return;
+                }
+
+                // Insert Header
+                placeholder.innerHTML = header.outerHTML;
+
+
+                // ==========================================
+                // CURRENT PAGE
+                // ==========================================
+
+                const pathname =
+                    window.location.pathname;
+
+                const isProductPage =
+                    pathname.includes('/products/');
+
+                const currentPage =
+                    pathname.split('/').pop() || 'index.html';
+
+
+                // ==========================================
+                // FIX LINKS FOR PRODUCT PAGES
+                // ==========================================
+
+                if (isProductPage) {
+
+                    const rootPages = [
+                        'index.html',
+                        'about.html',
+                        'products.html',
+                        'industries.html',
+                        'infrastructure.html',
+                        'downloads.html',
+                        'contact.html'
+                    ];
+
+                    const links =
+                        placeholder.querySelectorAll('a[href]');
+
+                    links.forEach(link => {
+
+                        let href =
+                            link.getAttribute('href');
+
+                        if (!href) return;
+
+                        if (
+                            href.startsWith('http') ||
+                            href.startsWith('#') ||
+                            href.startsWith('mailto:') ||
+                            href.startsWith('tel:')
+                        ) {
+                            return;
+                        }
+
+                        if (rootPages.includes(href)) {
+
+                            link.setAttribute(
+                                'href',
+                                '../' + href
+                            );
+
+                        }
+
+                    });
+
+
+                    // Fix Logo
+                    const logo =
+                        placeholder.querySelector(
+                            '.navbar-brand img'
+                        );
+
+                    if (logo) {
+
+                        const src =
+                            logo.getAttribute('src');
+
+                        if (
+                            src &&
+                            !src.startsWith('../')
+                        ) {
+
+                            logo.setAttribute(
+                                'src',
+                                '../' + src
+                            );
+
+                        }
+
+                    }
+
+                }
+
+
+                // ==========================================
+                // ACTIVE MENU
+                // ==========================================
+
+                const navLinks =
+                    placeholder.querySelectorAll('.nav-link');
+
+
+                navLinks.forEach(link => {
+
+                    link.classList.remove('active');
+
+                    const href =
+                        link.getAttribute('href');
+
+                    if (!href) return;
+
+                    const linkPage =
+                        href.split('/').pop();
+
+
+                    if (
+                        !isProductPage &&
+                        linkPage === currentPage
+                    ) {
+
+                        link.classList.add('active');
+
+                    }
+
+                });
+
+
+                // Products active on product detail pages
+                if (isProductPage) {
+
+                    const productsButton =
+                        placeholder.querySelector(
+                            '.dropdown-toggle'
+                        );
+
+                    if (productsButton) {
+
+                        productsButton.classList.add('active');
+
+                    }
+
+                }
+
+
+                // ==========================================
+                // LOAD PRODUCTS
+                // ==========================================
+
+                const dropdown =
+                    placeholder.querySelector(
+                        '#productsDropdown'
+                    );
+
+
+                if (dropdown) {
+
+                    const jsonPath =
+                        isProductPage
+                            ? '../assets/js/products.json'
+                            : 'assets/js/products.json';
+
+                    const productPath =
+                        isProductPage
+                            ? '../products/'
+                            : 'products/';
+
+
+                    try {
+
+                        const productsResponse =
+                            await fetch(jsonPath);
+
+                        if (!productsResponse.ok) {
+                            throw new Error(
+                                'Unable to load products.json'
+                            );
+                        }
+
+                        const products =
+                            await productsResponse.json();
+
+
+                        dropdown.innerHTML = '';
+
+
+                        products.forEach(product => {
+
+                            const name =
+                                product
+                                    .replace(/-/g, ' ')
+                                    .replace(
+                                        /\b\w/g,
+                                        letter =>
+                                            letter.toUpperCase()
+                                    );
+
+
+                            const li =
+                                document.createElement('li');
+
+
+                            const link =
+                                document.createElement('a');
+
+
+                            link.className =
+                                'dropdown-item';
+
+
+                            link.href =
+                                productPath +
+                                product +
+                                '.html';
+
+
+                            link.textContent =
+                                name;
+
+
+                            li.appendChild(link);
+
+                            dropdown.appendChild(li);
+
+                        });
+
+
+                    } catch (error) {
+
+                        console.error(
+                            'Could not load products:',
+                            error
+                        );
+
+                    }
+
+                }
+
+
+                // ==========================================
+                // PRODUCTS HOVER DROPDOWN
+                // ==========================================
+
+                const productsMenu =
+                    placeholder.querySelector(
+                        '.nav-item.dropdown'
+                    );
+
+
+                const productsButton =
+                    productsMenu
+                        ? productsMenu.querySelector(
+                            '.dropdown-toggle'
+                        )
+                        : null;
+
+
+                const productsDropdown =
+                    productsMenu
+                        ? productsMenu.querySelector(
+                            '.dropdown-menu'
+                        )
+                        : null;
+
+
+                if (
+                    productsMenu &&
+                    productsButton &&
+                    productsDropdown
+                ) {
+
+                    // --------------------------------------
+                    // DESKTOP HOVER
+                    // --------------------------------------
+
+                    productsMenu.addEventListener(
+                        'mouseenter',
+                        function () {
+
+                            if (window.innerWidth >= 992) {
+
+                                productsMenu.classList.add(
+                                    'show'
+                                );
+
+                                productsDropdown.classList.add(
+                                    'show'
+                                );
+
+                                productsButton.setAttribute(
+                                    'aria-expanded',
+                                    'true'
+                                );
+
+                            }
+
+                        }
+                    );
+
+
+                    productsMenu.addEventListener(
+                        'mouseleave',
+                        function () {
+
+                            if (window.innerWidth >= 992) {
+
+                                productsMenu.classList.remove(
+                                    'show'
+                                );
+
+                                productsDropdown.classList.remove(
+                                    'show'
+                                );
+
+                                productsButton.setAttribute(
+                                    'aria-expanded',
+                                    'false'
+                                );
+
+                            }
+
+                        }
+                    );
+
+
+                    // --------------------------------------
+                    // MOBILE / TABLET CLICK
+                    // --------------------------------------
+
+                    productsButton.addEventListener(
+                        'click',
+                        function (event) {
+
+                            if (window.innerWidth < 992) {
+
+                                event.preventDefault();
+
+                                productsMenu.classList.toggle(
+                                    'show'
+                                );
+
+                                productsDropdown.classList.toggle(
+                                    'show'
+                                );
+
+                            }
+
+                        }
+                    );
+
+                }
+
+
+                // ==========================================
+                // BOOTSTRAP NAVBAR
+                // ==========================================
+
+                if (
+                    typeof bootstrap !== 'undefined'
+                ) {
+
+                    const toggler =
+                        placeholder.querySelector(
+                            '.navbar-toggler'
+                        );
+
+
+                    const navbar =
+                        placeholder.querySelector(
+                            '#mainNavbar'
+                        );
+
+
+                    if (toggler && navbar) {
+
+                        new bootstrap.Collapse(
+                            navbar,
+                            {
+                                toggle: false
+                            }
+                        );
+
+                    }
+
+                }
+
+
+            } catch (error) {
+
+                console.error(
+                    'Unable to load header:',
+                    error
+                );
+
+            }
+
+        }
+
+
+        // ==========================================
+        // LOAD HEADER
+        // ==========================================
+
+        loadHeaderFromIndex();
+
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,31 @@
 [
     {
+        "id": "aluminium-trihydrate",
+        "name": "Aluminium Trihydrate",
+        "shortName": "ATH",
+        "category": "Extenders / Fillers",
+        "industry": [
+            "Wire & Cable",
+            "Flame Retardant",
+            "Refractories",
+            "Ceramics"
+        ],
+        "applications": [
+            "Wire & Cable",
+            "Flame Retardant",
+            "Refractories",
+            "Essential Ceramics",
+            "Polishing Alumina",
+            "Advanced Ceramics"
+        ],
+        "image": "assets/images/products/ATH.png",
+        "description": "Used as a versatile mineral filler and flame retardant to improve fire resistance, smoke suppression and performance across multiple applications.",
+        "link": "products/aluminium-trihydrate.html",
+        "featured": true,
+        "badge": "Best Seller",
+        "status": "active"
+    },
+    {
         "id": "gcc",
         "name": "Ground Calcium Carbonate (GCC)",
         "shortName": "GCC",
