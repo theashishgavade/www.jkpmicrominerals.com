@@ -40,7 +40,7 @@
             "Sealants",
             "PVC"
         ],
-        "image": "assets/images/products/PrecipitatedCalciumCarbonate (PCC).jpg",
+        "image": "../assets/images/products/PrecipitatedCalciumCarbonate (PCC).jpg",
         "description": "Provides controlled particle size, brightness and functional performance in specialty formulations.",
         "link": "products/pcc.html",
         "featured": true,
