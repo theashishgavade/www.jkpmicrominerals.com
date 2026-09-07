@@ -40,7 +40,7 @@
             "Sealants",
             "PVC"
         ],
-        "image": "/assets/images/products/precipitatedCalciumCarbonate (PCC).jpg",
+        "image": "/assets/images/products/PrecipitatedCalciumCarbonate%20(PCC).jpg",
         "description": "Provides controlled particle size, brightness and functional performance in specialty formulations.",
         "link": "products/pcc.html",
         "featured": true,
@@ -312,7 +312,7 @@
             "Cosmetics",
             "Engineering Plastics"
         ],
-        "image": "assets/images/products/Mica Powder.jpg",
+        "image": "/assets/images/products/Mica%20Powder.jpg",
         "description": "Improves weather resistance, barrier properties and decorative appearance.",
         "link": "products/mica-powder.html",
         "featured": false,
